@@ -2,3 +2,8 @@ body {
     background-image: url("assets/pokerbg.jpg");
     background-color: green;
 }
+
+h1, p {
+    font-family: Aleo;
+    color: red;
+}
