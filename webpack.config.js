@@ -8,6 +8,7 @@ module.exports = {
         path: path.join(__dirname, '/dist'),
         filename: 'index_bundle.js'
     },
+
     module: {
         rules: [
             {
@@ -21,13 +22,6 @@ module.exports = {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
-            {
-                test: /\.(png|jpe?g|gif|mp4)$/i,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'visual/',
-                },
-            },
         ]
     },
     plugins: [
@@ -37,5 +31,5 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css"
         })
-    ]
+    ],
 };
