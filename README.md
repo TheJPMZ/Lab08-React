@@ -1,2 +1,13 @@
 # Lab08-React
-Memory game using react
+### Memory game using react
+
+
+- [ ] (40 puntos) Según qué tan interesante es el diseño de su interfaz
+- [ ] (10 puntos) Flip de las tarjetas 
+- [ ] (30 puntos) Animation del flip
+- [ ] (20 puntos) Tarjetas en posiciones random en el grid
+- [ ] (20 puntos) "Juego completado"
+- [ ] (10 puntos) Contador de los movimientos
+- [ ] (10 puntos) Link de Git
+- [ ] (05 puntos) Por utilizar css grid
+
