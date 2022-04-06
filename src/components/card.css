@@ -1,4 +1,4 @@
-.carddiv {
+.card {
     background-color: transparent;
     height: 25vh;
     width: 8vw;
@@ -15,7 +15,8 @@
 }
 
 .carta_front {
-    background-image: url("../assets/Carta.png");
+    background-image: url("../assets/protectoricon1070006.jpg");
+    background-size: cover;
     height: 25vh;
     width: 8vw;
     border-radius: 15px;
@@ -29,18 +30,21 @@
     height: 100%;
     width: 100%;
 
-
     transform: rotateY(180deg);
 
 }
 
-.carddiv:hover .card_position {
+card_position {
     transform: rotateY(180deg);
 }
 
 .carta_front, .carta_back {
     position: absolute;
     backface-visibility: hidden;
+}
+
+.card.rotated > .card_position{
+    transform: rotateY(180deg);
 }
 
 

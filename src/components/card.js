@@ -15,14 +15,15 @@ export default function Card({image}){
 
     const string = "url(" + images[image] + ")"
 
-    return (
-        <div className="carddiv">
-            <div className="card_position">
-                <button className="carta_front">
-                </button>
-                <button className="carta_back" style={{'backgroundImage':string}}>
+    const [cardState, cardRotate] = useState(false);
 
-                </button>
+    const rotate = () => cardRotate((cardState)=>!cardState);
+
+    return (
+        <div className={`card ${cardState ? 'rotated' : ''}`} onClick={rotate}>
+            <div className="card_position">
+                <div className="carta_front" ></div>
+                <div className="carta_back" style={{'backgroundImage':string}}> </div>
             </div>
         </div>
 
