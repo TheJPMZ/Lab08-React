@@ -22,6 +22,15 @@ module.exports = {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
+            {
+                test: /\.mp3$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'aud/',
+                    publicPath: 'aud/'
+                }
+            },
         ]
     },
     plugins: [

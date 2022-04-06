@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './card.css'
+import audio from '../assets/Card-flip-sound-effect.mp3'
+
 
 const images = ["https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a5314c_w420.webp",
                 "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53152_w420.webp",
@@ -17,7 +19,13 @@ export default function Card({image}){
 
     const [cardState, cardRotate] = useState(false);
 
-    const rotate = () => cardRotate((cardState)=>!cardState);
+    const card_audio = new Audio(audio)
+    card_audio.volume = 0.2;
+
+    const rotate = () => {
+        cardRotate((cardState)=>!cardState);
+        card_audio.play()
+    }
 
     return (
         <div className={`card ${cardState ? 'rotated' : ''}`} onClick={rotate}>
@@ -26,8 +34,8 @@ export default function Card({image}){
                 <div className="carta_back" style={{'backgroundImage':string}}> </div>
             </div>
         </div>
-
     )
+
 
 
 
