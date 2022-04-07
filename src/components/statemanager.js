@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import './statemanager.css';
 import celebaudio from '../assets/celebration.mp3'
 
 const celebration = new Audio(celebaudio)

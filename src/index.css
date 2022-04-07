@@ -1,9 +1,7 @@
 body {
-    background-image: url("assets/pokermat.png");
-    background-color: green;
+    background-image: url("https://external-preview.redd.it/F7J5vtiCgYgK0nbwWdg8Q8dBKNt0WNrO26lEtrR8baY.png?format=pjpg&auto=webp&s=c8ae2c7fb1e9fb156bab8e89c91366beed0e4bc3");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-h1, p {
-    font-family: Aleo;
-    color: red;
-}

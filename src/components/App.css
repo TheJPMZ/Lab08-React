@@ -1,6 +1,19 @@
-h1, h2 {
-    font-family: Aleo;
+h1, h2, h3{
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 1px;
 }
+
+h2 {
+    font-size: xx-large;
+}
+
+
+ h1 {
+     margin-top: 10px;
+     text-align: center;
+ }
 
 .App {
     width: 100%;

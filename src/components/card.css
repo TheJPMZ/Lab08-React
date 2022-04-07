@@ -15,12 +15,14 @@
 }
 
 .carta_front {
-    background-image: url("../assets/protectoricon1070006.jpg");
+        background-image: url("../assets/cardslid.png");
     background-size: cover;
     height: 25vh;
     width: 8vw;
     border-radius: 15px;
     background-position: center ;
+
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 .carta_back {
     

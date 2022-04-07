@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import "./App.css"
 import Board from "./Board";
 import useStateManager from './statemanager'
-import Card from "./card";
 
 
 class App extends Component {
@@ -25,8 +24,9 @@ class App extends Component {
     render() {
         return (
             <div className="App" onClick={this.updateCounter}>
-                <h1>Movimientos: {this.state.counter}</h1>
-                <h2>Parejas Restantes: {this.state.restantes}</h2>
+                <h1>Memorias del Cosmere</h1>
+                <h2>Movimientos: {this.state.counter}</h2>
+                <h3>Parejas Restantes: {this.state.restantes}</h3>
                 <Board/>
             </div>
 
