@@ -8,7 +8,7 @@ celebration.volume = 0.2;
 
 const log = []
 const left = [0,1,2,3,4,5,6,7,8]
-
+let movements = 0
 
 const useStateManager = () => {
 
@@ -66,13 +66,28 @@ const useStateManager = () => {
         }
     }
 
+    const addMovement = () => {
+        movements += 1
+    }
+
+    const getMovements = () => {
+        return movements
+    }
+
+    const getLeftLength = () => {
+        return left.length
+    }
+
     return {
         addLog,
         removeLog,
         checkLog,
         checkLogLength,
         checkLeft,
-        pair
+        pair,
+        addMovement,
+        getMovements,
+        getLeftLength
 
     }
 

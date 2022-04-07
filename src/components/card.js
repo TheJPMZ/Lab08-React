@@ -17,7 +17,7 @@ const images = ["https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a5314c_w42
 
 const Card = ({image}) => {
 
-    const {pair, checkLeft, checkLogLength, checkLog, removeLog, addLog} = useStateManager();
+    const {a,b,addMovement, pair, checkLeft, checkLogLength, checkLog, removeLog, addLog} = useStateManager();
 
     const string = "url(" + images[image] + ")"
 
@@ -33,6 +33,7 @@ const Card = ({image}) => {
         const flip = () => {
             card_audio.play()
             cardRotate((cardState) => !cardState);
+            addMovement()
         }
 
         if (!checkLeft(image)){

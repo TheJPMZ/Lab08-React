@@ -48,5 +48,9 @@ card_position {
     transform: rotateY(180deg);
 }
 
+.card_position:hover {
+    cursor: pointer;
+}
+
 
 
