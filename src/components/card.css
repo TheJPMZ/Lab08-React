@@ -1,58 +1,54 @@
 .card {
-    background-color: transparent;
-    height: 25vh;
-    width: 8vw;
-    border-width: 1px;
-    perspective: 1000px;
+  background-color: transparent;
+  height: 25vh;
+  width: 8vw;
+  border-width: 1px;
+  perspective: 1000px;
 }
 
 .card_position {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
 }
 
 .carta_front {
-        background-image: url("../assets/cardslid.png");
-    background-size: cover;
-    height: 25vh;
-    width: 8vw;
-    border-radius: 15px;
-    background-position: center ;
+  background-image: url("../assets/cardslid.png");
+  background-size: cover;
+  height: 25vh;
+  width: 8vw;
+  border-radius: 15px;
+  background-position: center;
 
-    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .carta_back {
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    height: 25vh;
-    width: 8vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  height: 25vh;
+  width: 8vw;
 
-    transform: rotateY(180deg);
-
+  transform: rotateY(180deg);
 }
 
 card_position {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.carta_front, .carta_back {
-    position: absolute;
-    backface-visibility: hidden;
+.carta_front,
+.carta_back {
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-.card.rotated > .card_position{
-    transform: rotateY(180deg);
+.card.rotated > .card_position {
+  transform: rotateY(180deg);
 }
 
 .card_position:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
-
