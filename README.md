@@ -1,4 +1,4 @@
-# Lab08-React
+# Lab08-React & Lab09-EsLint
 
 ## Memories of the Cosmere
 A memory game based on The Stormlight Archive.
